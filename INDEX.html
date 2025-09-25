@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人學術檔案 - [您的名字]</title>
+    <!-- 引入 Inter 字體，營造專業感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS 變數，方便統一管理配色 */
+        :root {
+            --color-primary: #000000;
+            --color-background: #FFFFFF;
+            --color-light-gray: #f4f4f4;
+            --color-text: #333333;
+        }
+
+        /* 全域樣式與頁面淡入動畫 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 標題區塊 */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: var(--color-primary);
+            color: var(--color-background);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1em;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+        
+        /* 內容區塊 */
+        section {
+            padding: 30px 0;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        /* 技能展示區 */
+        .skill-card {
+            background-color: var(--color-light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 15px;
+            color: var(--color-primary);
+        }
+
+        .text-block {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--color-background);
+            border-left: 5px solid var(--color-primary);
+            border-radius: 4px;
+        }
+
+        /* 表格樣式 */
+        .table-wrapper {
+            overflow-x: auto; /* 在小螢幕上允許左右滑動 */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        table thead {
+            background-color: var(--color-primary);
+            color: var(--color-background);
+        }
+
+        /* 連結區塊 */
+        .links-grid {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .link-button {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+            border-radius: 8px;
+            font-weight: 700;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: var(--color-primary);
+            color: var(--color-background);
+            transform: translateY(-3px);
+        }
+
+        /* 頁腳 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        /* RWD (手機版) 樣式 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>[請在此替換為您的名字]</h1>
+        <p class="subtitle">歷史學術探索者 | 資訊精煉與視覺化專家</p>
+    </header>
+
+    <main class="container">
+        <!-- 關於我 -->
+        <section class="about">
+            <h2>關於我</h2>
+            <p>
+                我是一位熱衷於歷史學術研究的高中生。我的熱情在於將複雜、冗長的歷史文獻進行**濃縮與提煉**，並轉化為**結構化的表格或圖表**，以提升知識的傳播效率與可讀性。
+            </p>
+            <p>
+                這個網頁展示了我的核心技能：「將長篇大論化為簡潔表格」。
+            </p>
+        </section>
+
+        <!-- 技能展示 -->
+        <section class="skills">
+            <h2>核心技能展示：資訊表格化範例</h2>
+            <div class="skill-card">
+                <h3>範例：清朝滅亡之因 (濃縮與表格化)</h3>
+                <!-- 原始文本濃縮 -->
+                <div class="text-block">
+                    <h4>❖ 原始觀點摘要 (濃縮大意)</h4>
+                    <p>清朝滅亡的因素錯綜複雜，主要可歸納為：內部腐敗、財政枯竭（太平天國與外戰）、以及外部列強侵略與新思潮衝擊。其中，體制改革的遲緩，是無法有效應對內外壓力的關鍵。</p>
+                </div>
+                <!-- 表格化呈現 -->
+                <h4>❖ 轉化為結構化表格</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>類別</th>
+                                <th>具體因素</th>
+                                <th>影響程度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>內部</td>
+                                <td>官僚腐敗、財政壓力（軍費）</td>
+                                <td>體制自噬</td>
+                            </tr>
+                            <tr>
+                                <td>外部</td>
+                                <td>列強侵略、新式教育與思想衝擊</td>
+                                <td>加速瓦解</td>
+                            </tr>
+                            <tr>
+                                <td>綜合</td>
+                                <td>改革遲緩（新政不徹底）</td>
+                                <td>轉型失敗</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 連結中心 (Linktree 替代) -->
+        <section class="links-section">
+            <h2>連結中心</h2>
+            <div class="links-grid">
+                <a href="[請在此替換為您的 GitHub 網址]" target="_blank" class="link-button github">
+                    GitHub - 專案與範例
+                </a>
+                <a href="mailto:[請在此替換為您的 Email 帳號]" class="link-button email">
+                    Email - 聯繫我
+                </a>
+                <a href="[請在此替換為您的 LinkedIn 網址]" target="_blank" class="link-button linkedin">
+                    LinkedIn - 專業檔案
+                </a>
+                <a href="[請在此替換為您的 Instagram 網址]" target="_blank" class="link-button instagram">
+                    Instagram - 生活與興趣
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 [請在此替換為您的名字]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
